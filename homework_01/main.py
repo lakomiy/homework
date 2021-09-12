@@ -19,6 +19,13 @@ ODD = "odd"
 EVEN = "even"
 PRIME = "prime"
 out_ls = []
+def prime_numbers(args):
+        k = 0
+        for n in range(1, args + 1):
+            if args % n == 0:
+                k += 1
+        if k == 2:
+            return args
 
 def filter_numbers(ls, args):
     """
@@ -37,14 +44,8 @@ def filter_numbers(ls, args):
         return [x for x in ls if x % 2 == 0]
 
     elif args == PRIME:
-        for i in range(len(ls)):
-            k = 0
+        ls_prime = list(filter(prime_numbers, ls))
+        return ls_prime
 
-            for n in range(1,i+1):
-                if i % n == 0:
-                    k +=1
-
-            if k == 2:
-                out_ls.append(i)
-        return out_ls
-
+# ls_range = range(31)
+# print(filter_numbers(ls_range, PRIME))
