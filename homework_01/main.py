@@ -9,7 +9,7 @@ def power_numbers(*args):
     функция, которая принимает N целых чисел,
     и возвращает список квадратов этих чисел
     >>> power_numbers(1, 2, 5, 7)
-    [1, 4, 25, 49]
+    <<< [1, 4, 25, 49]
     """
     return [x * x for x in args]
 
@@ -27,9 +27,9 @@ def filter_numbers(ls, args=None):
     (выбор производится передачей дополнительного аргумента)
 
     >>> filter_numbers([1, 2, 3], ODD)
-    [1, 3]
+    <<< [1, 3]
     >>> filter_numbers([2, 3, 4, 5], EVEN)
-    [2, 4]
+    <<< [2, 4]
     """
     if args == ODD:
         return [x for x in ls if x % 2 != 0]
