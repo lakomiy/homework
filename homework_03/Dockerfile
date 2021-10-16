@@ -5,6 +5,6 @@ RUN pip install poetry==1.1.11
 COPY pyproject.toml poetry.lock ./
 RUN poetry config virtualenvs.create false
 RUN poetry install
-COPY app.py .
+COPY appp/app.py .
 EXPOSE 8000
 CMD uvicorn app:app --host=0.0.0.0
