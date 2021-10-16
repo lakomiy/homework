@@ -1,4 +1,4 @@
-#docker run -p 8000:8000 homework
+#docker build . -t homework && docker run -p 8000:8000 homework
 FROM python:3.9-buster
 WORKDIR /var/app
 RUN pip install poetry==1.1.11
