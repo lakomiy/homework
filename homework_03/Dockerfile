@@ -1,4 +1,4 @@
-#docker build . -t homework_003 && docker run -p 8000:8000 homework_003
+#docker run -it --init -p 8000:8000 homework
 FROM python:3.9-buster
 
 WORKDIR /var/app
