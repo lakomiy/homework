@@ -10,6 +10,9 @@ fastapi = "^0.70.0"
 uvicorn = "^0.15.0"
 docker = "^5.0.3"
 docker-compose = "^1.29.2"
+passlib = "^1.7.4"
+python-multipart = "^0.0.5"
+python-jose = "^3.3.0"
 
 [tool.poetry.dev-dependencies]
 pytest = "^6.2.5"
